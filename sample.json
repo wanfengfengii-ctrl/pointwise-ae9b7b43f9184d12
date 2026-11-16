@@ -1,0 +1,103 @@
+{
+  "batches": [
+    [
+      {
+        "id": [
+          "a",
+          3
+        ],
+        "kind": "insert",
+        "after": [
+          "a",
+          2
+        ],
+        "char": "t"
+      },
+      {
+        "id": [
+          "a",
+          2
+        ],
+        "kind": "insert",
+        "after": [
+          "a",
+          1
+        ],
+        "char": "a"
+      }
+    ],
+    [
+      {
+        "id": [
+          "a",
+          1
+        ],
+        "kind": "insert",
+        "after": null,
+        "char": "c"
+      }
+    ],
+    [
+      {
+        "id": [
+          "z",
+          1
+        ],
+        "kind": "insert",
+        "after": [
+          "a",
+          1
+        ],
+        "char": "r"
+      }
+    ],
+    [
+      {
+        "id": [
+          "m",
+          1
+        ],
+        "kind": "insert",
+        "after": [
+          "a",
+          1
+        ],
+        "char": " "
+      }
+    ],
+    [
+      {
+        "id": [
+          "x",
+          1
+        ],
+        "kind": "erase",
+        "target": [
+          "z",
+          1
+        ]
+      }
+    ],
+    [
+      {
+        "id": [
+          "x",
+          2
+        ],
+        "kind": "erase",
+        "target": [
+          "a",
+          1
+        ]
+      }
+    ]
+  ],
+  "expected_text": [
+    "",
+    "cat",
+    "crat",
+    "cr at",
+    "c at",
+    " at"
+  ]
+}
